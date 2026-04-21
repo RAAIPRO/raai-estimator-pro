@@ -1,15 +1,22 @@
 ---
 name: estimator-pro
-version: 3.5.1
-author: RAAI (ООО RAAI)
+version: 3.5.2
+author: RAAI (OOO RAAI)
 license: MIT
-description: > AI construction estimator for Russian market — local estimates (МДС 81-35.2004), ФЕР/ТЕР/ГЭСН normatives, BOQ (bill of quantities), KS-2/KS-3 documents, defect inspection, material calculation, tender KP, bid audit & inflation analysis. 10 working modes. Replaces junior estimator on 60-70% of routine tasks. ROI 25x. Russian-native, construction-specific, real normative base (not generic prompts). AI-Сметчик PRO — расчёт строительных смет по нормативам РФ (МДС 81-35.2004, ФЕР, ТЕР, ГЭСН). 10 режимов: локальная смета, расчёт материалов и работ, объёмная ведомость, дефектовка, КС-2/КС-3, тендерное КП, сравнение вариантов (TCO), аудит сметы на раздутие. Заменяет сметчика-джуниора на 60-70% рутины. ROI 25x — самый высокий в портфеле RAAI. Экономит 60-120К/мес + ловит раздутые сметы на 5-15% бюджета объекта. Обкатано на реальных строительных объектах RAAI. Русский язык нативно.
 price: 30000
 price_currency: RUB
-metadata: openclaw: emoji: "📐" security_level: L1 always: false optional: env: - ANTHROPIC_API_KEY - OPENAI_API_KEY - GOOGLE_SHEETS_CREDENTIALS_JSON - TELEGRAM_BOT_TOKEN network_behavior: makes_requests: false uses_agent_telegram: false
-triggers: # RU — основные (сметный контур) - смета - локальная смета - расчёт сметы - составить смету - материалы - расчёт материалов - работы - расчёт работ - объёмы - объёмная ведомость - дефектовка - дефектная ведомость - акт осмотра - кс-2 - кс-3 - тендер - тендерное кп - коммерческое предложение - проверь смету - аудит сметы - завышение сметы - ФЕР - ТЕР - ГЭСН - индексы Минстроя - локальный сметный расчёт - лср - сравни варианты - график работ # EN — для ClawHub поиска - construction estimate - local estimate - BOQ - bill of quantities - bid analysis - tender analysis - material costs - construction cost - estimate audit - KS-2 - KS-3 - defect inspection - building normatives
-tags: - russian - construction - estimating - pricing - fer - ter - normatives - dogfooded - construction-documents - bid-analysis
---- # AI-Сметчик PRO > Строительные сметы по нормативам РФ — МДС, ТЕР, ФЕР, ГЭСН.
+description: >
+  Construction estimating for the Russian market: local estimates, BOQ, KS-2, KS-3, defect inspection, material calculation and estimate audit.
+tags:
+- construction
+- estimating
+- boq
+- ks2
+- ks3
+- dogfooded
+---
+
+# AI-Сметчик PRO > Строительные сметы по нормативам РФ — МДС, ТЕР, ФЕР, ГЭСН.
 > **Заменяет сметчика-джуниора на 60-70%. ROI 25x — самый высокий в портфеле RAAI.** --- ## 5 ДИФФЕРЕНЦИАТОРОВ (почему не аналог) 1. **Нормативная база РФ нативно** — ФЕР/ТЕР/ГЭСН/МДС 81-35.2004 встроены в логику, а не «примерные цены за м²». Конкуренты дают усреднённые данные, мы — структурный расчёт с шифрами норм.
 2. **Проверка сметы на раздутие** — аудит подрядчика: дубли строк, завышенные НР/СП, скрытые коэффициенты. Типовое завышение 5-15% бюджета = инструмент окупается на 1-м объекте.
 3. **Полный документальный контур** — КС-2, КС-3, дефектная ведомость, объёмная ведомость, тендерное КП из одного источника. Не надо собирать отдельно каждый документ.
